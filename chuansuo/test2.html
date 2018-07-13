@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.parent{
+				width:300px;
+				border:1px black solid;
+				backface-visibility:hidden;
+				transform-origin:bottom left;
+				position:relative;
+				transform-style:preserve-3d;
+			}
+			.parent>div{
+				height:300px;
+				width:300px;
+				background-color:red;
+				backface-visibility:hidden;
+				transition:2s;
+			 
+			}
+			.parent>div:nth-child(1){
+				background-color:yellow;
+				transform:rotatey(180deg);
+				line-height:30px;
+
+			}
+			.parent>div:nth-child(2){
+				background-color:green;
+				position:absolute;
+				top:0;
+				left:0;
+			}
+			.parent:hover div:nth-child(2){
+				transform:rotatey(180deg);
+			}
+			.parent:hover div:nth-child(1){
+				transform:rotatey(0deg);
+			}
+			img{
+				position:relative;
+				left:70px;
+				top:90px;
+			}
+			p{
+				margin:0;
+			}
+			input{
+				border:red solid 1px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div><p>这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍这是自我介绍</p></div>
+			<div><img src="6.jpg"></div>
+		</div>
+		<input type="checkbox"/>
+	</body>
+</html>

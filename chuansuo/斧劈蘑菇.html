@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.parent{
+				height:700px;
+				width:1500px;
+				background-image:url("005.jpg");
+				position:relative;
+				left:200px;
+				top:100px;
+				
+			}
+			button{
+				position:absolute;
+				left:50px;
+				top:50px;
+				height:40px;
+				width:70px;
+				background-color:blue;
+				color:white;
+				border:hidden;
+			}
+			.futou{
+				height:500px;
+				width:341px;
+				position:absolute;
+				left:200px;
+				top:100px;
+				transform:rotate(-15deg);
+				transition:2s;
+				transform-origin:bottom left;
+			}
+			.mogu{
+				height:260px;
+				width:260px;
+				position:absolute;
+				left:630px;
+				top:400px;
+				transition:0.5s 0.8s;
+			}
+			button:active + .futou{
+				transform:rotate(45deg);
+			}
+			button:active ~ .mogu{
+				transform:translate(50px) rotate(45deg) scale(0.3);
+			}
+			.yuyan{
+				display:inline-block;
+				position:absolute;
+				left:730px;
+				top:400px;
+				backface-visibility:hidden;
+				transform:rotatey(180deg);
+				transition:0.5s 1s;
+				color:red;
+				font-size:16px;
+				font-weight:bold;
+			}
+			button:active ~ .yuyan{
+				transform:rotatey(0deg) scale(2);
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<button>打他</button>
+			<div class="futou"><img src="004.png"></div>
+			<div class="mogu"><img src="003.png"></div>
+			<div class="yuyan"><p>诶！诶！诶！打不着！</p></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="">
+		<style>
+			.main{
+				height:330px;
+				width:200px;
+				border:1px solid gray;
+				border-radius:5px;
+
+			}
+			.tablehead{
+				height:30px;
+				background:#F1F1F1;
+				line-height:30px;
+			}
+			.search{
+				border-radius:20px;
+				width:160px;
+				height:30px;
+				border:1px solid gray;
+				position:relative;
+				left:20px;
+				top:10px;
+				}
+			img{
+				width:20px;
+				height:20px;
+				position:relative;
+				left:10px;
+				top:5px;
+			}
+			img + input{
+				width:100px;
+				height:28px;
+				margin-left:20px;
+				border:none;
+				background:white;
+			}
+			.checked{
+				height:200px;
+				overflow:auto;
+				border-bottom:1px solid gray;
+				margin-top:20px;
+				color:gray;
+			}
+			.main:hover{
+				cursor:pointer;
+			}
+			input:hover,.checked label:hover{
+				cursor:pointer;
+				color:blue;
+			}
+			.checked input:checked + label{
+				color:blue;
+			}
+			.submit input{
+				height:20px;
+				width:30px;
+				margin-top:10px;
+				margin-left:10px;
+			}
+			#test:hover{
+				border:blue;
+			}
+			#test:checked:{
+				background-color:blue;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="main">
+			<div class="tablehead">
+				<input type="checkbox"/><label>列表1</label>
+			</div>
+			<div class="search">
+				<img src="search.png"><input type="search">
+			</div>
+			<div class="checked">
+				<input type="checkbox" id="test"/><label>北京</label><br/>
+				<input type="checkbox"/><label>上海</label><br/>
+				<input type="checkbox"/><label>天津</label><br/>
+				<input type="checkbox"/><label>江苏</label><br/>
+				<input type="checkbox"/><label>湖南</label><br/>
+				<input type="checkbox"/><label>湖北</label><br/>
+				<input type="checkbox"/><label>山东</label><br/>
+				<input type="checkbox"/><label>山西</label><br/>
+				<input type="checkbox"/><label>河南</label><br/>
+				<input type="checkbox"/><label>河北</label><br/>
+				<input type="checkbox"/><label>广东</label><br/>
+				<input type="checkbox"/><label>广西</label><br/>
+				<input type="checkbox"/><label>黑龙江</label><br/>
+				<input type="checkbox"/><label>吉林</label><br/>
+				<input type="checkbox"/><label>辽宁</label><br/>
+				<input type="checkbox"/><label>四川</label><br/>
+				<input type="checkbox"/><label>陕西</label><br/>
+				<input type="checkbox"/><label>西藏</label><br/>
+				<input type="checkbox"/><label>新疆</label><br/>
+				<input type="checkbox"/><label>内蒙古</label><br/>
+				<input type="checkbox"/><label>云南</label><br/>
+				<input type="checkbox"/><label>贵州</label><br/>
+			</div>
+			<div class="submit"><input type="buttom" value="提交"/></div>
+		</div>
+
+	</body>
+
+</html>
